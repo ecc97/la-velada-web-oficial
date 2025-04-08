@@ -4,9 +4,9 @@
   "version": "0.0.1",
   "scripts": {
     "predev": "pnpm generate:blur-images",
-    "dev": "astro dev",
+    "dev": "node api.js && astro dev",
     "prebuild": "pnpm generate:blur-images",
-    "build": "astro build",
+    "build": "node api.js && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "lint": "eslint --ext .astro .",
